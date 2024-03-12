@@ -18,7 +18,7 @@ const Tab = createBottomTabNavigator();
 function TabNavigation() {
   return (
     <Tab.Navigator
-      initialRouteName={'Alarm'}
+      initialRouteName={'stopwatch'}
       sceneContainerStyle={{
         backgroundColor: 'white',
         paddingTop: 0,
@@ -37,12 +37,22 @@ function TabNavigation() {
           paddingBottom: 10,
           fontSize: 16,
           fontFamily: 'ar-reg',
-          fontWeight: 'bold'
+          fontWeight: 'bold',
         },
         tabBarActiveTintColor: '#3A0C75',
+        headerTitleAlign: 'center',
+        headerTitleStyle: {
+            fontSize: 26, // Adjust font size as needed
+            fontWeight: 'bold',
+            
+          },
+        headerStyle: {
+          shadowColor: '#3A0C75',
+          height:70
+        },
         // headerShown: false,
       })}>
-      <Tab.Screen
+      {/* <Tab.Screen
         name="Alarm"
         component={AlarmScreen}
         options={{
@@ -50,7 +60,7 @@ function TabNavigation() {
             <Ionicons name={'alarm-outline'} size={28} color={color} />
           ),
         }}
-      />
+      /> */}
       <Tab.Screen
         name="Stopwatch"
         component={StopwatchScreen}
