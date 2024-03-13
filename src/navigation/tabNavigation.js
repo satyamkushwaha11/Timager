@@ -70,7 +70,7 @@ function TabNavigation() {
           ),
         }}
       />
-      <Tab.Screen
+      {/* <Tab.Screen
         name="Timer"
         component={TimerScreen}
         options={{
@@ -78,7 +78,7 @@ function TabNavigation() {
             <Ionicons name={'timer-outline'} size={25} color={color} />
           ),
         }}
-      />
+      /> */}
     </Tab.Navigator>
   );
 }
